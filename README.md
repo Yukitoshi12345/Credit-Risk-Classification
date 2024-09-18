@@ -8,11 +8,46 @@ The approach involves creating a logistic regression model to predict loan outco
 
 - [Criteria](#criteria)
 - [Data](#data)
+- [Overview of the Analysis](#overview-of-the-analysis)
 - [Results](#results)
+- [Summary](#summary)
 - [References](#references)
 - [License](#license)
 
 ## Criteria
+
+```
+1. Split the Data into Training and Testing Sets
+
+- Read the lending_data.csv data into a Pandas DataFrame.
+- Create the labels set `y` from the “loan_status” column, and then create the features `x`    
+  DataFrame from the remaining columns.
+    - A value of 0 in the “loan_status” column means that the loan is healthy. A value of 1  
+      means that the loan has a high risk of defaulting.
+- Split the data into training and testing datasets by using train_test_split.
+
+2. Create a Logistic Regression Model with the Original Data
+
+- Fit a logistic regression model by using the training data (X_train and y_train).
+- Save the predictions for the testing data labels by using the testing feature data (X_test) 
+  and the fitted model.
+- Evaluate the model’s performance by doing the following:
+    - Generate a confusion matrix.
+    -  Print the classification report.
+- Answer the following question: How well does the logistic regression model predict both the 
+  0 (healthy loan) and 1 (high-risk loan) labels?
+
+3. Write a Credit Risk Analysis Report
+
+Write a brief report that includes a summary and analysis of the performance of the machine learning models.
+
+- Ensure it contains the following:
+    - An overview of the analysis: Explain the purpose of this analysis.
+    - The results: Using a bulleted list, describe the accuracy score, the precision score and 
+      recall score of the machine learning model.
+    - A summary: Summarize the results from the machine learning model. Include your 
+      justification for recommending the model for use by the company. If you don’t recommend the model, justify your reasoning.
+```
 
 ## Data
 
@@ -29,7 +64,11 @@ This project utilises a primary CSV data source to analyse loan risk based on hi
 | total_debt | The total amount of debt currently owed by the borrower, represented in monetary units. | This includes all outstanding debts and is used to assess the borrower's financial obligations. |
 | loan_status | The status of the loan, where 0 indicates a "healthy loan" (i.e., a loan with a low risk of default) and 1 indicates a "high-risk loan" (i.e., a loan with a high likelihood of default). | This is the target variable used for predicting credit risk. |
 
+## Overview of the Analysis
+
 ## Results
+
+## Summary
 
 ## References
 
